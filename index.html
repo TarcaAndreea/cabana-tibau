@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CABANA TIBAU</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="modal is-hidden" data-modal>
+      <div class="modal__inner-div">
+        <button type="button" class="modal__button" data-modal-close>
+          <svg class="button__icon" width="18px" height="18px">
+            <use href="./Images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">
+          Leave your information and we'll call you back
+        </h3>
+        <form class="modal__form" name="contact-form">
+          <label class="form-item">
+            Name
+            <input class="form-item__input" type="text" name="name" />
+            <svg class="form-item__icons" width="18px" height="18px">
+              <use href="./Images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label class="form-item"
+            >Telephone
+            <input class="form-item__input" type="tel" name="Telephone" />
+            <svg class="form-item__icons" width="18px" height="18px">
+              <use href="./Images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label class="form-item"
+            >E-mail
+            <input class="form-item__input" type="email" name="email" />
+            <svg class="form-item__icons" width="18px" height="18px">
+              <use href="./Images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </label>
+          <label class="form-item"
+            >Comments
+            <textarea
+              class="form-item__textarea"
+              name="Comments"
+              id=""
+              cols="1"
+              rows="1"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <label class="form-terms">
+            <input type="checkbox" name="checkbox" />
+            <span class="form-terms__replace-checkbox">
+              <svg width="11" height="8px">
+                <use href="./Images/icons.svg#icon-Vector-2"></use>
+              </svg>
+            </span>
+            I agree with the letter and accept the<a
+              class="form-terms__link"
+              href="#"
+            >
+              Terms and Conditions</a
+            >
+          </label>
+          <button type="submit" class="form__button">Send</button>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <nav class="header__navigation">
+          <a class="header__logo" href="Cabana">
+            <img
+              src="images\cabana-tibau-high-resolution-logo-transparent.png"
+              alt="CABANA TIBAU"
+              width="300px"
+          /></a>
+
+          <ul class="navigation menu">
+            <li class="navigation__item">
+              <a
+                class="navigation__link active-link"
+                href="index.html"
+                rel="Studio"
+                >DESPRE NOI</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="portfolio.html" rel="Portfolio"
+                >Galerie foto</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="Contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts menu">
+          <li class="contacts__item">
+            <a class="contacts__link" href="iulianaialovei92@gmail.com">
+              <svg width="16" height="12">
+                <use href="./Images/icons.svg#icon-envelope"></use>
+              </svg>
+              iulianaialovei92@gmail.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+40748756061">
+              <svg width="16" height="12">
+                <use href="./Images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +40748756061</a
+            >
+          </li>
+        </ul>
+        <button
+          class="menu-toggle js-open-menu menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Bucură-te de arome locale și peisaje nemaivăzute, te așteaptăm!
+          </h1>
+          <button data-modal-open class="hero__button">Rezerva acum</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Facilități</h2>
+          <ul class="avantages">
+            <li class="avantages__list">
+              <div class="avantages__list-icons">
+                <svg width="70px" heigth="70px">
+                  <use href="./Images/icons.svg#icon-bed"></use>
+                </svg>
+              </div>
+
+              <h3 class="avantages__title">Cazare</h3>
+              <p class="avantages__text">
+                Camere confortabile și primitoare, decorate cu gust și dotate cu
+                toate facilitățile necesare pentru a vă asigura un sejur
+                relaxant.
+              </p>
+            </li>
+
+            <li class="avantages__list">
+              <div class="avantages__list-icons">
+                <svg width="70px" heigth="70px">
+                  <use href="./Images/icons.svg#icon-spoon-knife"></use>
+                </svg>
+              </div>
+
+              <h3 class="avantages__title">Mâncare tradițională</h3>
+              <p class="avantages__text">
+                Bucătarul nostru vă încântă cu bucate tradiționale, preparate cu
+                ingrediente proaspete și locale.
+              </p>
+            </li>
+
+            <li class="avantages__list">
+              <div class="avantages__list-icons">
+                <a>
+                  <img
+                    width="70px"
+                    heigth="70px"
+                    src="./images/locdejoacalogo.jpg"
+                    alt="Loc de joaca"
+                  />
+                </a>
+              </div>
+
+              <h3 class="avantages__title">Loc de joacă</h3>
+              <p class="avantages__text">
+                Un spațiu de joacă minunat, încorporat în peisajul pitoresc al
+                cabanei noastre, care oferă copiilor un loc sigur și captivant
+                pentru a se juca și a explora.
+              </p>
+            </li>
+            <li class="avantages__list">
+              <div class="avantages__list-icons">
+                <a>
+                  <img
+                    width="70px"
+                    heigth="70px"
+                    src="./images/leagan.png"
+                    alt="Relax"
+                  />
+                </a>
+              </div>
+              <h3 class="avantages__title">Relaxare</h3>
+              <p class="avantages__text">
+                Spațiile de relaxare în aer liber, inclusiv foișorul, unde vă
+                puteți bucura de aerul curat și priveliștile panoramice.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--work">
+        <div class="container">
+          <h2 class="section__title">Timp liber</h2>
+          <ul class="grid grid--three">
+            <li>
+              <picture>
+                <source
+                  media="screen and (min-width: 767px)"
+                  srcset="images\Bujordemunte.jpg"
+                  width="370"
+                  height="350"
+                />
+                <img
+                  width="370"
+                  height="350"
+                  src="images\Bujordemunte.jpg"
+                  alt="Lacul Stiol"
+                />
+              </picture>
+              <p class="grid__label">Drumeții</p>
+            </li>
+            <li>
+              <picture>
+                <source
+                  media="screen and (min-width: 767px)"
+                  srcset="images\partiaCarlibaba.jpg"
+                  width="370"
+                  height="350"
+                />
+                <img
+                  width="370"
+                  height="350"
+                  src="images\PartieCarli.jpg"
+                  alt="Partie Cârlibaba "
+                />
+              </picture>
+              <p class="grid__label">Pârtii</p>
+            </li>
+            <li>
+              <picture>
+                <source
+                  media="screen and (min-width: 767px)"
+                  srcset="images\sanii-trase-de-cai.jpg"
+                  width="370"
+                  height="350"
+                />
+                <img
+                  width="370"
+                  height="294"
+                  src="images\sanii-trase-de-cai.jpg"
+                  alt="Work in tablet"
+                />
+              </picture>
+              <p class="grid__label">Activități diverse</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu mobile-menu--list">
+        <li class="navigation__item">
+          <a href="./index.html" class="link navigation__link">Despre noi</a>
+        </li>
+        <li class="navigation__item">
+          <a href="./portfolio.html" class="link navigation__link"
+            >Galerie foto</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="link navigation__link">Contact</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu">
+        <li>
+          <a class="mobile-menu__tel" href="tel:+40748756061"> +40748756061</a>
+        </li>
+        <li>
+          <a class="mobile-menu__mail" href="mailtoiulianaialovei92@gmail.com">
+            iulianaialovei92@gmail.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu mobile-menu--media">
+        <li class="mobile-menu__item">
+          <a href="Instagram">Instagram</a>
+        </li>
+
+        <li><span class="line"></span></li>
+        <li class="mobile-menu__item">
+          <a href="Facebook">Facebook</a>
+        </li>
+        <li><span class="line"></span></li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <address class="footer__address">
+          <a
+            class="footer__logo"
+            href="./images/cabana-tibau-high-resolution-logo-transparent.png"
+          >
+            <img
+              width="200px"
+              src="./images/cabana-tibau-high-resolution-logo-transparent.png"
+              alt=""
+            />
+          </a>
+          <ul class="footer-contacts">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__address" href="695ParkAve,NY10065,USA"
+                >695 Park Ave, NY 10065, USA</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="mailtoinfo@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" href="tel:+12127724150"
+                >+1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="footer__social-media">
+          <h3>Find us on</h3>
+          <ul class="social-media__links">
+            <li class="social-media__item">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./Images/icons.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./Images/icons.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./Images/icons.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./Images/icons.svg#icon-linkedin-1-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form name="newsletter" class="footer-form">
+          <label class="footer-form__items"
+            >Subscribe to the newsletter
+            <input
+              class="footer-form__input"
+              type="email"
+              placeholder="E-mail"
+              name="email"
+              required
+            />
+          </label>
+          <button class="footer-form__button" type="submit">
+            Subscribe
+            <svg width="24px" height="24px">
+              <use href="./Images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
